@@ -1,1 +1,41 @@
+print("==========\n1.binary\n2.hex")
+inp = input("")
+print("=" * 10)
 
+if inp == "binary":
+  print("Enter your value:")
+  text1 = input()
+
+  var1 = int(text1, 2)
+  print(var1)
+elif inp == "hex":
+  print("Enter your string:")
+  text2 = input()
+  
+  var2 = int(text2, 16)
+  print(var2)
+else: #if user set bad inp input
+  print("Type:\nBinary or hex")
+
+#Just to look around
+input()print("==========\n1.binary\n2.hex")
+inp = input("")
+print("=" * 10)
+
+if inp == "binary":
+  print("Enter your value:")
+  text1 = input()
+
+  var1 = int(text1, 2)
+  print(var1)
+elif inp == "hex":
+  print("Enter your string:")
+  text2 = input()
+  
+  var2 = int(text2, 16)
+  print(var2)
+else: #if user set bad inp input
+  print("Type:\nBinary or hex")
+
+#Just to look around
+input()
