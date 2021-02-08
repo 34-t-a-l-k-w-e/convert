@@ -1,41 +1,51 @@
-print("==========\n1.binary\n2.hex")
-inp = input("")
-print("=" * 10)
+#imports
+import time
 
-if inp == "binary":
-  print("Enter your value:")
-  text1 = input()
+#Added this so my code wouldn't look bad 
+print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+time.sleep(0.3)
+print("@@@@@#,   ....   /&@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&* *&@@@@")
+time.sleep(0.3)
+print("@@@#  *%@@@@@@@&* .(@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@&* *&@@@@")
+time.sleep(0.3)
+print("@@#, /%@@@@@@@@@@@@@@@@%,.       /%@@@#, ..      *%@@&/ ,&@@@@@# ,#@@(,       *%@@@&* .,   .*     *%@@")
+time.sleep(0.3)
+print("@@(  #@@@@@@@@@@@@@@@@(  (&@@@@%* ,#@@#, ,(@@@@%. *&@@%* /&@@@#. %@&,./&@@@@@#,.(@@&* ,(@@@@@&* *&@@@@")
+time.sleep(0.3)
+print("@@#. (&@@@@@@@@@@&&&@&* *&@@@@@@@, *@@#, (&@@@@&* *&@@@%,.(@@#,.%@@#            ,&@&* *&@@@@@&* *&@@@@")
+time.sleep(0.3)
+print("@@&(  /&@@@@@@@@#. *@&/ .%@@@@@@#../@@#, (&@@@@&* *&@@@@&,./&,,(@@@%  (@@@@@@@@@@@@&* *&@@@@@&* *&@@@@")
+time.sleep(0.3)
+print("@@@@%*  ,/(#(/*. .(&@@%/  ,(#(/, .(&@@#, (&@@@@&* *&@@@@@%* ..(@@@@@#, .*(((/,.,#@@&* *&@@@@@&* .(%@@@")
+time.sleep(0.3)
+print("@@@@@@@%(*,,,*/#@@@@@@@@@%/*,**(&@@@@@%/,#@@@@@&(*(&@@@@@@%*,#@@@@@@@@&(*,,,/(&@@@@&(*(&@@@@@@&(*,/%@@")
+time.sleep(0.3)
+print("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
 
-  var1 = int(text1, 2)
-  print(var1)
-elif inp == "hex":
-  print("Enter your string:")
-  text2 = input()
-  
-  var2 = int(text2, 16)
-  print(var2)
-else: #if user set bad inp input
-  print("Type:\nBinary or hex")
+#Random bullshit go!
+print("=" * 50)
+print("binary or hex?: ")
+var = input()
 
-#Just to look around
-input()print("==========\n1.binary\n2.hex")
-inp = input("")
-print("=" * 10)
+if var == "binary":
+  print("Input here your value")
+  bin = input()
 
-if inp == "binary":
-  print("Enter your value:")
-  text1 = input()
+  #Binary important part
+  if bin == "":
+    print("You need to enter a valid value")
+  elif bin > str(7):
+    print("Max 6")
+  else:
+    print(int(bin, 2))
+elif var == "hex":
+  print("Enter here your string/value")
+  hex = str(input())
 
-  var1 = int(text1, 2)
-  print(var1)
-elif inp == "hex":
-  print("Enter your string:")
-  text2 = input()
-  
-  var2 = int(text2, 16)
-  print(var2)
-else: #if user set bad inp input
-  print("Type:\nBinary or hex")
-
-#Just to look around
-input()
+  #hex importat part
+  if hex == "":
+    print("You need to enter a valid string/value or both")
+  else:
+    print(int(hex, 16))
+else:
+  print("binary or hex?")
